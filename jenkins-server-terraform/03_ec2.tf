@@ -1,7 +1,7 @@
 
 
 # AWS EC2 instance resource definition
-resource "aws_instance" "ec2" {
+resource "aws_instance" "Girl" {
   # Use the dynamically retrieved AMI ID from the AWS AMI data source
   ami                    = data.aws_ami.ami.image_id
   
@@ -36,9 +36,9 @@ resource "aws_instance" "ec2" {
 
 # Outputs to access instance details after creation
 output "instance_id" {
-  value = aws_instance.ec2.id
+  value = aws_instance.Girl.id
 }
 
 output "instance_public_ip" {
-  value = aws_instance.ec2.public_ip
+  value = aws_instance.Girl.public_ip
 }
