@@ -86,7 +86,7 @@ pipeline {
         }
         stage('Checkout Code') {
             steps {
-                git branch: 'main', credentialsId: 'GITHUB', url: 'https://github.com/codewithmuh/three-tier-devsecops-project.git'
+                git branch: 'main', credentialsId: 'GITHUB', url: 'https://github.com/Anusuya-murugiah/Three-tier-EKS-project.git'
             }
         }
         stage('Update Deployment file') {
